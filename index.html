@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DC3D Prints — custom 3D printed signs, displays, props, decorations and personalized designs.">
+  <title>DC3D Prints | Custom 3D Printing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home"><span>DC</span>3D PRINTS</a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#custom">Custom Prints</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="nav-cta" href="#custom">Get a Quote</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">CUSTOM 3D PRINTING</div>
+        <h1>Your ideas.<br><span>Printed.</span></h1>
+        <p>Custom signs, decorations, props, displays and personalized creations — made to order by DC3D Prints.</p>
+        <div class="hero-buttons">
+          <a class="button primary" href="#shop">Explore Prints</a>
+          <a class="button secondary" href="#custom">Request a Custom Print</a>
+        </div>
+        <div class="trust-row">
+          <div><strong>Custom</strong><small>Made your way</small></div>
+          <div><strong>Quality</strong><small>Clean, detailed prints</small></div>
+          <div><strong>Local</strong><small>Made with care</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="glow"></div>
+        <img src="assets/controller-hands.jpg" alt="Custom 3D printed controller hand display">
+        <div class="floating-card">
+          <span>FEATURED</span>
+          <strong>Custom Displays</strong>
+          <small>Built from your idea</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">WHAT WE MAKE</div>
+          <h2>Featured Creations</h2>
+        </div>
+        <p>From everyday décor to one-of-a-kind pieces, every print can be customized with your preferred colors, size and finish.</p>
+      </div>
+      <div class="cards">
+        <article class="product-card">
+          <div class="photo"><img src="assets/reindeer-hands.jpg" alt="3D printed reindeer hand displays"></div>
+          <div class="product-info"><span>DISPLAY</span><h3>Character Hand Displays</h3><p>Fun statement pieces and themed displays.</p></div>
+        </article>
+        <article class="product-card">
+          <div class="photo"><img src="assets/superman-sign.jpg" alt="3D printed superhero wall sign"></div>
+          <div class="product-info"><span>WALL ART</span><h3>Layered Wall Signs</h3><p>Multi-color signs designed to stand out.</p></div>
+        </article>
+        <article class="product-card">
+          <div class="photo"><img src="assets/420-sign.jpg" alt="3D printed custom sign"></div>
+          <div class="product-info"><span>CUSTOM</span><h3>Personalized Signs</h3><p>Names, logos, phrases and custom designs.</p></div>
+        </article>
+        <article class="product-card">
+          <div class="photo"><img src="assets/lightning-display.jpg" alt="3D printed lightning display"></div>
+          <div class="product-info"><span>DECOR</span><h3>Desk & Room Decor</h3><p>Unique pieces for your setup, room or office.</p></div>
+        </article>
+        <article class="product-card">
+          <div class="photo"><img src="assets/helmet.jpg" alt="3D printed helmet prop"></div>
+          <div class="product-info"><span>PROPS</span><h3>Cosplay & Props</h3><p>Large-format pieces for costumes and displays.</p></div>
+        </article>
+        <article class="product-card">
+          <div class="photo"><img src="assets/minecraft-sign.jpg" alt="3D printed pixel art sign"></div>
+          <div class="product-info"><span>GAMING</span><h3>Gaming & Fan Art</h3><p>Custom pieces for your gaming space.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="custom" id="custom">
+      <div class="custom-copy">
+        <div class="eyebrow">HAVE AN IDEA?</div>
+        <h2>Let's turn it into a print.</h2>
+        <p>Already have an STL or 3MF file? Have a picture of something you want recreated? Send the details and we'll figure out the best way to make it.</p>
+        <ul>
+          <li>Choose your size</li>
+          <li>Choose your colors</li>
+          <li>Tell us what you need</li>
+          <li>Get a custom quote</li>
+        </ul>
+      </div>
+      <form class="quote-form" onsubmit="submitQuote(event)">
+        <h3>Request a Quote</h3>
+        <label>Name<input required name="name" placeholder="Your name"></label>
+        <label>Email<input required type="email" name="email" placeholder="you@email.com"></label>
+        <label>What do you want printed?<textarea required name="details" rows="4" placeholder="Tell us about your project..."></textarea></label>
+        <label>Upload a file <span class="optional">(optional)</span><input type="file" accept=".stl,.3mf,.obj,.png,.jpg,.jpeg"></label>
+        <button class="button primary" type="submit">Send Quote Request</button>
+        <p class="form-note">This demo form is ready to connect to your email or order system.</p>
+      </form>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="section-heading">
+        <div><div class="eyebrow">OUR WORK</div><h2>Made by DC3D Prints</h2></div>
+        <p>A look at some of the projects we've printed.</p>
+      </div>
+      <div class="masonry">
+        <img src="assets/helmet.jpg" alt="Finished 3D printed helmet">
+        <img src="assets/controller-hands.jpg" alt="3D printed controller display">
+        <img src="assets/cowboys-sign.jpg" alt="3D printed Cowboys sign">
+        <img src="assets/420-sign.jpg" alt="3D printed custom sign">
+        <img src="assets/lightning-display.jpg" alt="3D printed lightning displays">
+        <img src="assets/reindeer-hands.jpg" alt="3D printed reindeer displays">
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <div class="eyebrow">ABOUT DC3D PRINTS</div>
+        <h2>Made for people who want something different.</h2>
+      </div>
+      <p>DC3D Prints creates custom 3D printed pieces for homes, gaming setups, gifts, displays, events, cosplay and more. If you can picture it, we can work toward printing it.</p>
+    </section>
+
+    <section class="cta">
+      <div><div class="eyebrow">READY TO PRINT?</div><h2>Have something in mind?</h2></div>
+      <a class="button primary" href="#custom">Start a Custom Order</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span>DC</span>3D PRINTS</div>
+    <p>Custom 3D printing • Made to order</p>
+    <div class="footer-links"><a href="#shop">Shop</a><a href="#custom">Custom Prints</a><a href="#gallery">Gallery</a></div>
+    <small>© 2026 DC3D Prints. All rights reserved.</small>
+  </footer>
+
+  <script>
+    function submitQuote(e) {
+      e.preventDefault();
+      const form = e.target;
+      const name = form.name.value.trim() || "there";
+      alert("Thanks, " + name + "! Your quote request is ready to be connected to DC3D Prints.");
+      form.reset();
+    }
+  </script>
+</body>
+</html>
